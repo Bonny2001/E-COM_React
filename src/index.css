@@ -1,0 +1,81 @@
+*{
+    padding: 0;margin: 0;
+}
+body{
+     font-family: "Poppins", sans-serif;
+     background-color: #e9f6f5;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+}
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+.btn-col1{
+    background-color: #edb1f1;
+    border: none;
+}
+.btn-col2{
+    background-color: #8ef6e4;
+    border: none;
+}
+.btn-col3{
+    background-color: #f66095;
+    border: none;
+}
+
+
+
+/* /////Responsive /////// */
+
+/* Add this to your CSS file or inside a <style> tag */
+
+/* Make images and containers flexible */
+img, .responsive-container {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive typography */
+body {
+  font-size: 16px;
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Example responsive layout */
+.responsive-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.responsive-item {
+  flex: 1 1 300px;
+  min-width: 200px;
+}
+
+/* Stack items on small screens */
+@media (max-width: 600px) {
+  .responsive-container {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+/* Navbar styles */
+
