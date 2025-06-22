@@ -1,5 +1,5 @@
 import React from 'react'
-
+// import { SpeedInsights } from "@vercel/speed-insights/next"
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Products from './components/Products'
 import Navbar from './components/Navbar'
@@ -33,6 +33,7 @@ function App() {
 
 
         </Router>
+        {/* <SpeedInsights/> */}
       </div>
 
 
