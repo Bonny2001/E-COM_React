@@ -65,7 +65,7 @@ function ProductDetail({ setCart, cart }) {
 
 
             <div className='container' style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
-                <div className="card mb-3  my-5" style={{ width: "70rem", boxshadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }}>
+                <div className="card mb-3  my-5" style={{ maxWidth: "70rem", boxshadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }}>
                     <div className="row g-0" >
                         <div className="col-md-4">
                             <img src={product.imgSrc} className="img-fluid rounded-start" alt="..." />
@@ -83,7 +83,7 @@ function ProductDetail({ setCart, cart }) {
                         </div>
                     </div>
                 </div>
-                < Products items={relatedPD} cart={cart} setCart={setCart} />
+                < Products style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "20px" }} items={relatedPD} cart={cart} setCart={setCart} />
             </div>
 
 

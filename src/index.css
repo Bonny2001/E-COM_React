@@ -1,35 +1,42 @@
-*{
-    padding: 0;margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
-body{
-     font-family: "Poppins", sans-serif;
-     background-color: #e9f6f5;
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #e9f6f5;
 }
-header{
-    display: flex;
-    flex-direction: column;
-    position: sticky;
+
+header {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
 }
-.product-list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    padding: 20px;
-    border-radius: 5px;
-    
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  border-radius: 5px;
+
 }
-.btn-col1{
-    background-color: #edb1f1;
-    border: none;
+
+.btn-col1 {
+  background-color: #edb1f1;
+  border: none;
 }
-.btn-col2{
-    background-color: #8ef6e4;
-    border: none;
+
+.btn-col2 {
+  background-color: #8ef6e4;
+  border: none;
 }
-.btn-col3{
-    background-color: #f66095;
-    border: none;
+
+.btn-col3 {
+  background-color: #f66095;
+  border: none;
 }
 
 
@@ -39,7 +46,8 @@ header{
 /* Add this to your CSS file or inside a <style> tag */
 
 /* Make images and containers flexible */
-img, .responsive-container {
+img,
+.responsive-container {
   max-width: 100%;
   height: auto;
 }
@@ -48,6 +56,7 @@ img, .responsive-container {
 body {
   font-size: 16px;
 }
+
 @media (max-width: 600px) {
   body {
     font-size: 14px;
@@ -66,11 +75,92 @@ body {
   min-width: 200px;
 }
 
+.filter-item1 {
+  font-size: 0.9rem;
+
+}
+
+.filteration {
+  font-family: "Dancing Script, cursive";
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 2px 60px;
+  background-color: #edb1f1;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+.nav-link {
+  font-size: 32px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: "Dancing Script, cursive";
+  /* text-shadow: px 1px 1px #a60fe2; */
+}
+
+.search-container {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.filter-item1 ::placeholder{
+  font-family:"Dancing Script, cursive" ;
+}
+
 /* Stack items on small screens */
 @media (max-width: 600px) {
   .responsive-container {
     flex-direction: column;
   }
+
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 0;
+  }
+
+  .search-input {
+    min-width: 12rem;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .filter-item {
+    font-size: 12px;
+  }
+
+  .filter-item1 {
+    font-size: 12px;
+  }
+
+  .filteration {
+    font-size: 12px;
+  }
+
+  .search-input {
+    height: 30px;
+    width: 12rem;
+    margin-top: 5px;
+  }
+
+  .nav-head {
+    display: flex;
+  }
+
+  .nav-link {
+    font-size: 28px;
+  }
+  .search-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
 
 
@@ -78,4 +168,3 @@ body {
 
 
 /* Navbar styles */
-

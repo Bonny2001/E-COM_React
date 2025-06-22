@@ -1,39 +1,10 @@
-/* Add this to your CSS file */
-/* ...existing code... */
+@media only screen and (min-width: 768px) {
+ .navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-/* Make images and containers flexible */
-img, .responsive-container {
-  max-width: 100%;
-  height: auto;
-  box-sizing: border-box;
-}
-
-/* Responsive typography */
-body {
-  font-size: 16px;
-}
-@media (max-width: 600px) {
-  body {
-    font-size: 14px;
   }
 }
-
-/* Responsive layout example */
-.responsive-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-.responsive-item {
-  flex: 1 1 300px;
-  min-width: 200px;
-}
-
-/* Stack items vertically on small screens */
-@media (max-width: 600px) {
-  .responsive-container {
-    flex-direction: column;
-  }
-}
-
-/* ...existing code... */
