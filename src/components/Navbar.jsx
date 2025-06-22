@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate, useParams } from 'react-router-dom'
 import { items } from './Data'
 import Product from './Products'
 import { IoMdCart } from 'react-icons/io';
-import './Navbar-style.css'; // Assuming you have a CSS file for Navbar styles
+// import './Navbar-style.css'; // Assuming you have a CSS file for Navbar styles
 
 function Navbar({ setData, cart }) {
 
@@ -32,7 +32,7 @@ function Navbar({ setData, cart }) {
     return (
         <>
             <header className='sticky-top' style={{ position: 'sticky', top: 0, zIndex: 1000 }}>
-                <div className="nav-bar" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px 60px', backgroundColor: '#9896f1', position: 'sticky', top: 0, zIndex: 1000 }}>
+                <div className="nav-bar" style={{ }}>
                     <Link to={"/"} className='nav-link' style={{fontFamily: "Dancing Script, cursive" }}>Moumita.in</Link>
 
                  <div className='search-container'>   <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -56,7 +56,7 @@ function Navbar({ setData, cart }) {
                     <Link to={"/cart"} style={{ fontSize: '28px', fontWeight: 'bold', color: "black", textDecoration: "none" }}>
 
 
-                        <button type="button" className="btn-cart btn btn-warning position-relative btn-col2">
+                        <button type="button" className="btn-cart btn btn-warning position-relative btn-col2 btn-sm">
                             <IoMdCart style={{ fontSize: "1.5rem" }} />
                             <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                                 {cart.length}
