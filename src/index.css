@@ -121,6 +121,12 @@ body {
   top: 0;
   z-index: 1000;
 }
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+
+}
 
 /* Stack items on small screens */
 @media (max-width: 600px) {
