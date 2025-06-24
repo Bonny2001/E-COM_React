@@ -80,6 +80,42 @@ export const items =  [
       description: 'Apple MacBook Air Laptop M1 chip, 13.3-inch/33.74 cm Retina Display, ',
       price: '89999',
     },
+     {
+    id: 10,
+    category: 'mobiles',
+    title: 'Samsung Galaxy S23 Ultra',
+    imgSrc: 'https://s47295.pcdn.co/wp-content/uploads/2023/02/00_kv_pc-900x450.jpg',
+    amazonLink: 'https://amzn.to/3s9gVhk',
+    description: 'Samsung Galaxy S23 Ultra 512 GB, 12 GB RAM',
+    price: '124999',
+  },
+  {
+    id: 11,
+    category: 'laptops',
+    title: 'Dell XPS 13',
+    imgSrc: 'https://ubuntu.com/wp-content/uploads/1a4e/Screen-Shot-2022-07-21-at-9.26.40-AM.png',
+    amazonLink: 'https://amzn.to/3r8qU1X',
+    description: 'Dell XPS 13, 13.4-inch FHD+, Intel Core i7, 16GB RAM, 512GB SSD',
+    price: '134999',
+  },
+  {
+    id: 12,
+    category: 'tablets',
+    title: 'Apple iPad Pro',
+    imgSrc: 'https://m.media-amazon.com/images/I/81gC7frRJyL.SL1500.jpg',
+    amazonLink: 'https://amzn.to/3q5YRoP',
+    description: 'Apple iPad Pro 12.9-inch, Wi-Fi, 256GB - Space Gray',
+    price: '99999',
+  },
+  {
+    id: 13,
+    category: 'mobiles',
+    title: 'OnePlus 12',
+    imgSrc: 'https://rukminim2.flixcart.com/image/750/900/xif0q/mobile/p/g/i/12-cph2573-oneplus-original-imahyzy8wvsewgxx.jpeg?q=20&crop=false',
+    amazonLink: 'https://amzn.to/3r7sUt9',
+    description: 'OnePlus 12 5G, 256GB, 16GB RAM - Black',
+    price: '74999',
+  }
 
 
   ]
