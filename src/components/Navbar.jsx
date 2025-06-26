@@ -21,7 +21,7 @@ function Navbar({ setData, cart }) {
         const element = items.filter((product) => product.price >= e)
         setData(element);
     }
-      const handleFilterPrice1 = (e) => {
+    const handleFilterPrice1 = (e) => {
         const element = items.filter((product) => product.price <= e)
         setData(element);
     }
@@ -37,21 +37,15 @@ function Navbar({ setData, cart }) {
         <>
             <header className='sticky-top' style={{ position: 'sticky', top: 0, zIndex: 1000 }}>
                 <div className="nav-bar" style={{}}>
-                    <Link to={"/"} className='nav-link' style={{ fontFamily: "Dancing Script, cursive" }}>Moumita.in</Link>
+                    <Link to={"/"} className='nav-link' style={{ fontFamily: "Dancing Script, cursive", textshadow:" 2px 2px #000000" }}>Moumita.in</Link>
 
                     <div className='search-container'>   <div style={{ display: 'flex', alignItems: 'center' }}>
                         <i className="fa fa-search" style={{ marginRight: '10px' }}></i>
                         <form onSubmit={handleSearch}>
                             <input
-                                className='search-input'
+                                className='search-input  '
                                 value={searchTerm}
                                 onChange={(e) => setSearchTerm(e.target.value)}
-
-                                style={{
-
-                                    padding: "10px 30px",
-                                    borderRadius: "8px",
-                                }}
                                 type="text"
                                 placeholder='Search Products' />
                         </form>
@@ -76,8 +70,8 @@ function Navbar({ setData, cart }) {
                 {
                     location.pathname === "/" ? (
 
-                        <div className="filteration " style={{ fontFamily: "Dancing Script, cursive" , overflowX:"scroll"}}>
-                            <Link to={"/"}  className='filter-item' style={{ textDecoration: "none", color: "white" }} onClick={() => setData(items)} >Home</Link>
+                        <div className="filteration " style={{ fontFamily: "Dancing Script, cursive", overflowX: "scroll" }}>
+                            <Link to={"/"} className='filter-item' style={{ textDecoration: "none", color: "white" }} onClick={() => setData(items)} >Home</Link>
                             <div className='filter-item' onClick={() => handleFilterMobile("mobiles")} >Mobile</div>
                             <div className='filter-item' onClick={() => handleFilterMobile("laptops")}>Laptop</div>
                             <div className='filter-item' onClick={() => handleFilterMobile("tablets")}>Tablet</div>
@@ -95,8 +89,8 @@ function Navbar({ setData, cart }) {
                             {/* <div className='filter-item1' onClick={() => handleFilterPrice("39999")}>Under 39999</div>
                             <div className='filter-item1' onClick={() => handleFilterPrice1("39999")}>Avobe 39999</div> */}
                         </div>
-                    ) :(<div className="filteration " style={{ fontFamily: "Dancing Script, cursive" }}>
-                            <Link to={"/"} style={{ textDecoration: "none", color: "white" }} onClick={() => setData(items)} >Home</Link> </div>)
+                    ) : (<div className="filteration " style={{ fontFamily: "Dancing Script, cursive" }}>
+                        <Link to={"/"} style={{ textDecoration: "none", color: "white" }} onClick={() => setData(items)} >Home</Link> </div>)
                 }
 
 
