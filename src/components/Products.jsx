@@ -53,11 +53,11 @@ function Product({ items, cart, setCart }) {
             return (
               <div key={item.id} className="card my-3 text-center" style={{ width: "18rem", textDecoration: "none", boxshadow: "box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;" }}>
                 <Link to={`/products/${item.id}`}>
-                  <img className="card-img-top" src={item.imgSrc} alt="inv" />
+                  <img style={{height:"12em", width:"13rem", marginTop:"20px"}}  className="card-img-top" src={item.imgSrc} alt="inv" />
 
                 </Link>
                 <div className="card-body">
-                  <h5 className="card-title">{item.title}</h5>
+                  <h6 className="card-title">{item.title}</h6>
                   <h5 className='card-price' style={{ color: "green" }}>₹{item.price}</h5>
                   {/* <p className="card-text">{item.description}</p> */}
                   <div className='btn-group' style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "10px" }}>

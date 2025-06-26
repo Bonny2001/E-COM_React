@@ -76,18 +76,19 @@ body {
 }
 
 .filter-item1 {
-  font-size: 0.9rem;
+  /* font-size: 0.9rem; */
 
 }
 
 .filteration {
-  font-family: "Dancing Script, cursive";
   color: white;
   display: flex;
   justify-content: space-around;
   padding: 2px 60px;
   background-color: #edb1f1;
   font-weight: bolder;
+  flex-wrap: wrap;
+  gap: 18px;
   font-size: 1.2rem;
 }
 
@@ -121,7 +122,8 @@ body {
   top: 0;
   z-index: 1000;
 }
-.card-body{
+
+.card-body {
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -165,6 +167,10 @@ body {
 
   .filteration {
     font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 6px 12px;
+    gap: 10px;
   }
 
   .search-input {
@@ -182,15 +188,15 @@ body {
     margin-top: 5px;
   }
 
-  .search-container {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-  }
 
   .search-container {
 
     margin: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
 
 }

@@ -30,7 +30,7 @@ function ProductDetail({ setCart, cart }) {
             progress: undefined,
             theme: "light",
             transition: Slide,
-        });;
+        });
 
     }
 
@@ -72,9 +72,9 @@ function ProductDetail({ setCart, cart }) {
                         </div>
                         <div className="col-md-8 my-5 text-center">
                             <div className="card-body" style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-                                <h3 className="card-title">{product.title}</h3>
-                                <h3 className="card-text" style={{ color: "green" }}>₹{product.price}</h3>
-                                <h4 className="card-text"><small className="text-body-secondary">{product.description}</small></h4>
+                                <h4 className="card-title">{product.title}</h4>
+                                <h5 className="card-text" style={{ color: "green" }}>₹{product.price}</h5>
+                                <p className="card-text"><small className="text-body-secondary">{product.description}</small></p>
                                 <div className='btn-group my-5' style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "10px" }}>
                                     <button className="btn btn-primary btn-col3">Buy</button>
                                     <button className="btn btn-warning btn-col2 " onClick={() => addtoCart(product.id, product.price, product.title, product.imgSrc, product.description)}>Add Cart</button>
@@ -83,7 +83,8 @@ function ProductDetail({ setCart, cart }) {
                         </div>
                     </div>
                 </div>
-                < Products style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "20px" }} items={relatedPD} cart={cart} setCart={setCart} />
+                < Products style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "20px" }} 
+                items={relatedPD} cart={cart} setCart={setCart} />
             </div>
 
 
