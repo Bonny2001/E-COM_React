@@ -76,24 +76,24 @@ function Navbar({ setData, cart }) {
                 {
                     location.pathname === "/" ? (
 
-                        <div className="filteration " style={{ fontFamily: "Dancing Script, cursive" }}>
-                            <Link to={"/"} style={{ textDecoration: "none", color: "white" }} onClick={() => setData(items)} >Home</Link>
+                        <div className="filteration " style={{ fontFamily: "Dancing Script, cursive" , overflowX:"scroll"}}>
+                            <Link to={"/"}  className='filter-item' style={{ textDecoration: "none", color: "white" }} onClick={() => setData(items)} >Home</Link>
                             <div className='filter-item' onClick={() => handleFilterMobile("mobiles")} >Mobile</div>
                             <div className='filter-item' onClick={() => handleFilterMobile("laptops")}>Laptop</div>
                             <div className='filter-item' onClick={() => handleFilterMobile("tablets")}>Tablet</div>
-                            <div className='filter-item1' onClick={() => handleFilterMobile("women's clothing")}>Women clothing</div>
-                            <div className='filter-item1' onClick={() => handleFilterMobile("men's clothing")}>Men clothing</div>
-                            <div className='filter-item1' onClick={() => handleFilterMobile("jewelery")}>Jewelery</div>
-                            <div className='filter-item1' onClick={() => handleFilterMobile("electronics")}>Electronics</div>
+                            <div className='filter-item' onClick={() => handleFilterMobile("women's clothing")}>Women</div>
+                            <div className='filter-item' onClick={() => handleFilterMobile("men's clothing")}>Men</div>
+                            <div className='filter-item' onClick={() => handleFilterMobile("jewelery")}>Jewelery</div>
+                            <div className='filter-item' onClick={() => handleFilterMobile("electronics")}>Electronics</div>
 
 
-                            <div className='filter-item1' onClick={() => handleFilterMobile("tv")}>TV</div>
-                            <div className='filter-item1' onClick={() => handleFilterMobile("audio")}>Audio</div>
-                            <div className='filter-item1' onClick={() => handleFilterMobile("gaming")}>Gaming</div>
-                            <div className='filter-item1' onClick={() => handleFilterMobile("appliances")}>Appliances</div>
+                            <div className='filter-item' onClick={() => handleFilterMobile("tv")}>TV</div>
+                            <div className='filter-item' onClick={() => handleFilterMobile("audio")}>Audio</div>
+                            <div className='filter-item' onClick={() => handleFilterMobile("gaming")}>Gaming</div>
+                            <div className='filter-item' onClick={() => handleFilterMobile("appliances")}>Appliances</div>
 
-                            <div className='filter-item1' onClick={() => handleFilterPrice("39999")}>Under 39999</div>
-                            <div className='filter-item1' onClick={() => handleFilterPrice1("39999")}>Avobe 39999</div>
+                            {/* <div className='filter-item1' onClick={() => handleFilterPrice("39999")}>Under 39999</div>
+                            <div className='filter-item1' onClick={() => handleFilterPrice1("39999")}>Avobe 39999</div> */}
                         </div>
                     ) :(<div className="filteration " style={{ fontFamily: "Dancing Script, cursive" }}>
                             <Link to={"/"} style={{ textDecoration: "none", color: "white" }} onClick={() => setData(items)} >Home</Link> </div>)
