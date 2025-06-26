@@ -16,9 +16,10 @@ header {
 
 .product-list {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: center;
   gap: 30px;
+  width: fit-content;
   padding: 20px;
   border-radius: 5px;
 
@@ -130,11 +131,38 @@ body {
 
 }
 
+.img-size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.width_x {
+  width: 70rem;
+}
+
+.div.ex1 {
+  overflow-x: scroll;
+}
+
+
 /* Stack items on small screens */
 @media (max-width: 600px) {
   .responsive-container {
     flex-direction: column;
   }
+
+  .width_x {
+    width: auto;
+  }
+  .product-list {
+  display: flex;
+  flex-wrap: wrap;
+ 
+
+}
 
   .nav-bar {
     display: flex;

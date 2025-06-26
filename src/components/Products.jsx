@@ -47,7 +47,7 @@ function Product({ items, cart, setCart }) {
       />
 
       <div className="container">
-        <div className="product-list">   
+        <div className="product-list" style={{flexWrap:"wrap"}}>   
 
           {items.map((item) => {
             return (

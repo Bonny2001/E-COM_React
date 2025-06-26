@@ -65,10 +65,10 @@ function ProductDetail({ setCart, cart }) {
 
 
             <div className='container' style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
-                <div className="card mb-3  my-5" style={{ maxWidth: "70rem", boxshadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }}>
-                    <div className="row g-0" >
-                        <div className="col-md-4">
-                            <img src={product.imgSrc} className="img-fluid rounded-start" alt="..." />
+                <div className="card mb-3 width_x my-5" style={{ MaxWidth: "70rem", boxshadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }}>
+                    <div className="row g-0" style={{ width: "100%" }} >
+                        <div className="col-md-4 img-size" >
+                            <img src={product.imgSrc} className="img-fluid rounded-start" alt="..." style={{ height: "14rem", width: "12rem" }} />
                         </div>
                         <div className="col-md-8 my-5 text-center">
                             <div className="card-body" style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
@@ -83,8 +83,11 @@ function ProductDetail({ setCart, cart }) {
                         </div>
                     </div>
                 </div>
-                < Products style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "20px" }} 
-                items={relatedPD} cart={cart} setCart={setCart} />
+                <div style={{ overflowX: "scroll", display: "flex",flexWrap:"none" }}>
+
+                    < Products style={{ display: "flex", flexwrap: 'none',flexDirection: "row", alignItems: "center", gap: "20px" }}
+                        items={relatedPD} cart={cart} setCart={setCart} />
+                </div>
             </div>
 
 

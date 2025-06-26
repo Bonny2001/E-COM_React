@@ -74,7 +74,7 @@ function Navbar({ setData, cart }) {
                 </div>
 
                 {
-                    location.pathname === "/" && (
+                    location.pathname === "/" ? (
 
                         <div className="filteration " style={{ fontFamily: "Dancing Script, cursive" }}>
                             <Link to={"/"} style={{ textDecoration: "none", color: "white" }} onClick={() => setData(items)} >Home</Link>
@@ -95,7 +95,8 @@ function Navbar({ setData, cart }) {
                             <div className='filter-item1' onClick={() => handleFilterPrice("39999")}>Under 39999</div>
                             <div className='filter-item1' onClick={() => handleFilterPrice1("39999")}>Avobe 39999</div>
                         </div>
-                    )
+                    ) :(<div className="filteration " style={{ fontFamily: "Dancing Script, cursive" }}>
+                            <Link to={"/"} style={{ textDecoration: "none", color: "white" }} onClick={() => setData(items)} >Home</Link> </div>)
                 }
 
 
